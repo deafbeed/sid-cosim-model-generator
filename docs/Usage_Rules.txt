@@ -1,0 +1,97 @@
+Module Listing
+==============
+
+{ list of module-definitions }
+
+module-definition ::= module-name(module) module-definition-file NL
+
+Module Definition
+=================
+
+{ list of definition-statements }
+
+definition-statement ::= clock-definition NL
+	| port-definition NL
+	| reset-definition NL
+	| initialization NL
+	| vcd-time-limit NL
+
+clock-definition ::= clock-keyword signal-name(net) toggle-time-interval(integer)
+	| clock-keyword signal-name(net)	// default toggle-time-interval = 1
+
+clock-keyword ::= "bus-clock" | "bc"		// for bus clock
+	| "clock" | "c" 			// for other clocks
+
+port-definition ::= port-keyword signal-name(net) initial-value(integer or hex)
+	| port-keyword signal-name(net)		// default initial-value = 0
+
+port-keyword ::= "input" | "in" | "output" | "out"
+
+reset-definition ::= reset-keyword signal-name(net) initial-value(integer or hex)
+        | reset-keyword signal-name(net)         // default initial-value = 0
+
+initialization ::= initialization-keyword signal-name(net) value(integer or hex)
+
+initialization-keyword ::= "initial" | "i"
+
+vcd-time-limit ::= "vcd" time-limit(integer or hex)
+
+Protocol Listing
+================
+
+{ list of protocol-definitions }
+
+protocol-definition ::= module-name(module) protocol-tasks-file NL
+
+Protocol Tasks
+==============
+
+register-definition { list of tasks }
+
+register-definition ::= "registers" number-of-registers(integer) NL
+
+task ::= heading { list of statements } "end"
+
+heading ::= reset-task-heading | read/write-task-heading NL
+
+reset-task-heading ::= "task reset" 
+
+read/write-task-heading ::= "task read/write" data-bus(net)
+
+statement ::= wait-for-clockedge NL
+	| delay NL
+	| print NL
+	| assert NL
+	| assign NL
+	| wait NL
+
+wait-for-clockedge ::= "@"edge-type
+
+edge-type ::= posedge | negedge
+
+delay ::= "#"number-of-time-steps(integer)
+	| "!"number-of-bus-clocks(integer) number-of-bus-half-clocks(integer)
+
+print ::= "print message" message
+	| "print signal" signal-name(net)
+	| "print parameter" parameter
+	| "print time"
+
+parameter ::= "addr" | "data" 		// for read/write tasks
+parameter ::= "val"			// for reset task
+
+assert ::= signal-name(net) "==" RHS
+
+RHS ::= signal-name(net)
+	| parameter
+	| value(integer or hex)
+
+assign ::= LHS "=" RHS
+
+LHS ::= signal-name(net)
+	| assign_parameter
+
+assign_parameter ::= "data"		// for read task
+assign_parameter ::= (none)		// for reset/write tasks
+
+wait ::= "wait" signal-name(net) "=" RHS

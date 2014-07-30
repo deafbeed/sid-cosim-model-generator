@@ -1,0 +1,3 @@
+clock	hdl_clock_pin
+reset	hdl_reset_pin
+typename	hw-hdl-##MOD_NAME##

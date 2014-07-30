@@ -1,0 +1,36 @@
+registers 6
+
+task read ips_rdata 2
+@posedge
+ips_module_en = 1
+ips_rwb = 1
+ips_addr = addr
+!1
+print signal ips_addr
+print signal ips_rdata
+data = ips_rdata
+ips_addr = 0
+ips_module_en = 0
+print message Read task complete.
+endtask
+
+task write ips_wdata 2
+@ posedge
+ips_module_en = 1
+ips_rwb = 0
+ips_addr = addr
+ips_wdata = data
+print signal ips_addr
+print signal ips_wdata
+!1
+ips_addr = 0
+ips_wdata = 0
+ips_module_en = 0
+print message Write task complete.
+endtask
+
+task reset 2
+ipg_hard_async_reset_b = 0
+!1
+ipg_hard_async_reset_b = 1
+endtask

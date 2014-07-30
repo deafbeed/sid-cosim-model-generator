@@ -1,0 +1,62 @@
+Xpwm.lo Xpwm.o:  \
+ /home/ipinte5/work/env/cosim/generator/examples/PWM/pwm_cosim_model/src/Xpwm.cxx \
+  /home/ipinte5/work/env/cosim/generator/examples/PWM/pwm_cosim_model/src/Xpwm.h \
+  /home/ipinte5/work/env/cosim/sid/src/sid/component/../include/sidtypes.h \
+  /home/ipinte5/work/env/cosim/sid/src/sid/component/../include/sidcomp.h \
+  /home/ipinte5/work/env/cosim/sid/src/sid/component/../include/sidcomputil.h \
+  /home/ipinte5/work/env/cosim/sid/src/sid/component/../include/sidconfig.h \
+  /home/ipinte5/work/env/cosim/sid/build/sid/component/../include/sidconfutil.h \
+  /home/ipinte5/work/env/cosim/sid/src/sid/component/../include/sidbusutil.h \
+  /home/ipinte5/work/env/cosim/sid/src/sid/component/../include/sidschedutil.h \
+  /home/ipinte5/work/env/cosim/sid/src/sid/component/../include/sidpinutil.h \
+  /home/ipinte5/work/env/cosim/sid/src/sid/component/../include/sidblockingutil.h \
+  /home/ipinte5/work/env/cosim/sid/src/sid/component/../include/sidattrutil.h \
+  /home/ipinte5/work/env/cosim/sid/src/sid/component/../include/sidtypes.h \
+  /home/ipinte5/work/env/cosim/sid/src/sid/component/../include/sidmiscutil.h \
+  /home/ipinte5/work/env/cosim/sid/src/sid/component/../include/sidwatchutil.h \
+  /home/ipinte5/work/env/cosim/sid/src/sid/component/../include/sidso.h \
+  /home/ipinte5/work/env/cosim/verilator/verilator-3.803/include/verilated.h \
+  /home/ipinte5/work/env/cosim/verilator/verilator-3.803/include/verilatedos.h \
+  /home/ipinte5/work/env/cosim/generator/examples/PWM/pwm_cosim_model/src/Vpwm.h \
+  /home/ipinte5/work/env/cosim/verilator/verilator-3.803/include/verilated_vcd_c.h \
+  /home/ipinte5/work/env/cosim/generator/examples/PWM/pwm_cosim_model/src/Xpwm_rw_protocol.cxx
+
+/home/ipinte5/work/env/cosim/generator/examples/PWM/pwm_cosim_model/src/Xpwm.h:
+
+/home/ipinte5/work/env/cosim/sid/src/sid/component/../include/sidtypes.h:
+
+/home/ipinte5/work/env/cosim/sid/src/sid/component/../include/sidcomp.h:
+
+/home/ipinte5/work/env/cosim/sid/src/sid/component/../include/sidcomputil.h:
+
+/home/ipinte5/work/env/cosim/sid/src/sid/component/../include/sidconfig.h:
+
+/home/ipinte5/work/env/cosim/sid/build/sid/component/../include/sidconfutil.h:
+
+/home/ipinte5/work/env/cosim/sid/src/sid/component/../include/sidbusutil.h:
+
+/home/ipinte5/work/env/cosim/sid/src/sid/component/../include/sidschedutil.h:
+
+/home/ipinte5/work/env/cosim/sid/src/sid/component/../include/sidpinutil.h:
+
+/home/ipinte5/work/env/cosim/sid/src/sid/component/../include/sidblockingutil.h:
+
+/home/ipinte5/work/env/cosim/sid/src/sid/component/../include/sidattrutil.h:
+
+/home/ipinte5/work/env/cosim/sid/src/sid/component/../include/sidtypes.h:
+
+/home/ipinte5/work/env/cosim/sid/src/sid/component/../include/sidmiscutil.h:
+
+/home/ipinte5/work/env/cosim/sid/src/sid/component/../include/sidwatchutil.h:
+
+/home/ipinte5/work/env/cosim/sid/src/sid/component/../include/sidso.h:
+
+/home/ipinte5/work/env/cosim/verilator/verilator-3.803/include/verilated.h:
+
+/home/ipinte5/work/env/cosim/verilator/verilator-3.803/include/verilatedos.h:
+
+/home/ipinte5/work/env/cosim/generator/examples/PWM/pwm_cosim_model/src/Vpwm.h:
+
+/home/ipinte5/work/env/cosim/verilator/verilator-3.803/include/verilated_vcd_c.h:
+
+/home/ipinte5/work/env/cosim/generator/examples/PWM/pwm_cosim_model/src/Xpwm_rw_protocol.cxx:

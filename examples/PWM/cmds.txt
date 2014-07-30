@@ -1,0 +1,3 @@
+design_flow_wrapper.sh -f conf/pwm_filelist -d conf/pwm_dirlist -m conf/pwm_definitions -p conf/pwm_protocol
+umask 177 && arm-eabi-gcc -T target.ld -nostdlib  -I${ECOS_INSTALL}/include/ -L${ECOS_INSTALL}/lib -Isw sw/pwm_program.c -o sw/pwm_image
+arm-eabi-sid --board=pid7t-normalmap --load cpu=sw/pwm_image --custom=conf/pwm_sid.conf

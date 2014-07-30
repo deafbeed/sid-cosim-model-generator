@@ -1,0 +1,56 @@
+Compile test bench program
+==========================
+
+arm-eabi-gcc -g -I/home/ghaza/work/Tools_Downloaded/eCos/ecos-arm/ecos_install/include/ -L/home/ghaza/work/Tools_Downloaded/eCos/ecos-arm/ecos_install/lib/ -o program/usb_program.x -Ttarget.ld -nostdlib program/usb_program.c
+
+arm-eabi-gcc -g -I/home/shamik/Work/Emulation/eCos/ecos-arm/ecos_install/include/ -L/home/shamik/Work/Emulation/eCos/ecos-arm/ecos_install/lib/ -o sw/usb_program.x -Ttarget.ld -nostdlib sw/usb_program.c
+
+System with 3 hardware modules: host, slave and connector
+=========================================================
+
+1. compile model
+----------------
+
+sh ~/work/Tools_Downloaded/bin/design_flow_wrapper.sh -f conf_files/filelist.usb -d conf_files/directory_list -m conf_files/usb_definitions.txt -p conf_files/usb_protocol.txt
+
+sh ~/work/Tools_Downloaded/bin/design_flow_wrapper.sh -f conf_files/filelist.connector -d conf_files/directory_list -m conf_files/usb_connector_definitions.txt -p conf_files/usb_connector_protocol.txt
+
+2. start SID
+------------
+
+sid usbHostSlave_sid.conf
+
+3. execute test bench program
+-----------------------------
+
+arm-eabi-gdb program/usb_program.x
+
+4. delete hardware model (if required)
+--------------------------------------
+
+~/work/Tools_Downloaded/bin/sid_clean.sh usbHostSlave
+~/work/Tools_Downloaded/bin/sid_clean.sh usbConnector
+
+System with 1 hardware module: combined host + slave + connections
+==================================================================
+
+1. compile model
+----------------
+
+sh ~/work/Tools_Downloaded/bin/design_flow_wrapper.sh -f conf_files/filelist.combo -d conf_files/directory_list -m conf_files/usb_definitions.combo.txt -p conf_files/usb_protocol.combo.txt
+
+2. start SID
+------------
+
+sid usbHostSlave_sid.combo.conf
+
+3. execute test bench program
+-----------------------------
+
+arm-eabi-gdb program/usb_program.x
+
+4. delete hardware model (if required)
+--------------------------------------
+
+~/work/Tools_Downloaded/bin/sid_clean.sh comboHostSlaveSIDWrap
+

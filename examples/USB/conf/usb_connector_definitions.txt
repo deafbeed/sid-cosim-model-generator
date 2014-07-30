@@ -1,0 +1,9 @@
+vcd	1000000
+in	hostDataIn
+out	hostDataOut
+in	hostControl
+in	slaveDataIn
+out	slaveDataOut
+in	slaveControl
+in	USBDPlusPullup
+in	USBDMinusPullup

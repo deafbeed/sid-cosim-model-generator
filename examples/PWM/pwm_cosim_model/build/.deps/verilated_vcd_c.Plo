@@ -1,0 +1,11 @@
+verilated_vcd_c.lo verilated_vcd_c.o:  \
+ /home/ipinte5/work/env/cosim/verilator/verilator-3.803/include/verilated_vcd_c.cpp \
+  /home/ipinte5/work/env/cosim/verilator/verilator-3.803/include/verilatedos.h \
+  /home/ipinte5/work/env/cosim/verilator/verilator-3.803/include/verilated.h \
+  /home/ipinte5/work/env/cosim/verilator/verilator-3.803/include/verilated_vcd_c.h
+
+/home/ipinte5/work/env/cosim/verilator/verilator-3.803/include/verilatedos.h:
+
+/home/ipinte5/work/env/cosim/verilator/verilator-3.803/include/verilated.h:
+
+/home/ipinte5/work/env/cosim/verilator/verilator-3.803/include/verilated_vcd_c.h:

@@ -1,0 +1,8 @@
+TOOL_DIR=/home/ipinte5/work/env/cosim/generator
+SID_ROOT=/home/ipinte5/work/env/cosim/sid
+VERILATOR_ROOT=/home/ipinte5/work/env/cosim/verilator/verilator-3.803
+SYSTEMPERL=/home/ipinte5/work/env/cosim/verilator/SystemPerl-1.335
+SYSTEMC=/usr/local/systemc-2.2.0
+SYSTEMC_ARCH=linux64
+VTRACE=1
+#SPTRACE=1

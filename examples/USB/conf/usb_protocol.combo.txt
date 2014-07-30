@@ -1,0 +1,53 @@
+registers 512
+
+task write din
+@posedge
+print message Task: write
+print time
+// @posedge
+#1
+adr = addr
+din = data
+stb = 1
+we = 1
+@posedge
+print signal adr
+wait ack = 1
+// @posedge
+#1
+print signal din
+stb = 0
+adr = 0
+din = 0
+we = 0
+endtask
+
+task read dout
+@posedge
+print message Task: read
+print time
+// @posedge
+#1
+adr = addr
+dout = 0
+stb = 1
+we = 0
+@posedge
+print signal adr
+wait ack = 1
+print signal dout
+// @posedge
+#1
+data = dout
+stb = 0
+adr = 0
+dout = 0
+we = 0
+endtask
+
+task reset
+@posedge
+rst = 1
+@posedge
+rst = 0
+endtask

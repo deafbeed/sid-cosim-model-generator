@@ -1,0 +1,31 @@
+substitute ##MOD_NAME## %%TOP_MODULE%%
+fixed X%%TOP_MODULE%%.cxx fixed1.cxx ##FILE_NAME## %%TOP_MODULE%%
+loop  X%%TOP_MODULE%%.cxx loop0.cxx input
+fixed X%%TOP_MODULE%%.cxx fixed1b.cxx ##FILE_NAME## %%TOP_MODULE%%
+loop  X%%TOP_MODULE%%.cxx loop1.cxx clock 
+loop  X%%TOP_MODULE%%.cxx loop2.cxx bus-clock 
+fixed X%%TOP_MODULE%%.cxx fixed2.cxx 
+fixed X%%TOP_MODULE%%.cxx fixed3.cxx 
+fixed X%%TOP_MODULE%%.cxx fixed4.cxx
+loop  X%%TOP_MODULE%%.cxx loop5.cxx output 
+fixed X%%TOP_MODULE%%.cxx fixed5.cxx
+loop  X%%TOP_MODULE%%.cxx loop6.cxx output 
+fixed X%%TOP_MODULE%%.cxx fixed6.cxx
+loop  X%%TOP_MODULE%%.cxx loop7.cxx input 
+fixed X%%TOP_MODULE%%.cxx fixed7.cxx 
+loop  X%%TOP_MODULE%%.cxx loop8.cxx inports 
+fixed X%%TOP_MODULE%%.cxx fixed8.cxx 
+loop  X%%TOP_MODULE%%.cxx loop10.cxx input 
+loop  X%%TOP_MODULE%%.cxx loop11.cxx output 
+fixed X%%TOP_MODULE%%.cxx fixed9.cxx 
+loop  X%%TOP_MODULE%%.cxx loop12.cxx bus-clock 
+fixed X%%TOP_MODULE%%.cxx fixed10.cxx 
+fixed X%%TOP_MODULE%%.h fixed1.h ##FILE_NAME## %%TOP_MODULE%%
+loop  X%%TOP_MODULE%%.h loop0.h output
+fixed X%%TOP_MODULE%%.h fixed1b.h ##FILE_NAME## %%TOP_MODULE%%
+loop  X%%TOP_MODULE%%.h loop1.h input
+loop  X%%TOP_MODULE%%.h loop2.h output
+fixed X%%TOP_MODULE%%.h fixed2.h
+loop  UI_%%TOP_MODULE%%.1.txt loop1.ui.txt input
+loop  UI_%%TOP_MODULE%%.1.txt loop2.ui.txt output
+fixed UI_%%TOP_MODULE%%.1.txt fixed1.ui.txt

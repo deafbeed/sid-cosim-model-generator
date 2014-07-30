@@ -1,0 +1,14 @@
+vcd	1000000
+r	rst
+bc	clk	20
+c	usbClk	10
+in	adr
+in	din
+out	dout
+in	cyc
+in	stb
+in	we
+in	sel
+out	ack
+out	err
+out	rty

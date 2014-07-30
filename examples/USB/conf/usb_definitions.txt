@@ -1,0 +1,30 @@
+vcd	1000000
+r	rst_i
+bc	clk_i	20
+c	usbClk	10
+in	address_i
+in	data_i
+out	data_o
+in	we_i
+in	strobe_i
+out	ack_o
+out	hostSOFSentIntOut
+out	hostConnEventIntOut
+out	hostResumeIntOut
+out	hostTransDoneIntOut
+out	slaveSOFRxedIntOut
+out	slaveResetEventIntOut
+out	slaveResumeIntOut
+out	slaveTransDoneIntOut
+out	slaveNAKSentIntOut
+out	slaveVBusDetIntOut
+in	USBWireDataIn
+out	USBWireDataOut
+out	USBWireDataOutTick
+out	USBWireDataInTick
+out	USBWireCtrlOut
+// in	USBWireCtrlIn
+out	USBFullSpeed
+out	USBDPlusPullup
+out	USBDMinusPullup
+in	vBusDetect	1

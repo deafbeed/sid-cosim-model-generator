@@ -1,0 +1,21 @@
+
+
+Host Version number = 0x20
+Slave Version number = 0x20
+Testing host register read/write 
+Testing slave register read/write 
+Testing register reset 
+Configure host and slave mode.
+Connect full speed
+Cancel interrupts
+Disconnect
+Connect full speed
+Host forcing reset
+Connect full speed
+Trans test: Device address = 0x00, 2 byte SETUP transaction to Endpoint 0.
+Checking receive data
+Trans test: Device address = 0x5a, 20 byte OUT DATA0 transaction to Endpoint 1.
+Checking receive data
+Trans test: Device address = 0x01, 2 byte IN transaction to Endpoint 2.
+Checking receive data
+Finished all tests (61 passed, 0 failed)

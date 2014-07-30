@@ -1,0 +1,51 @@
+registers 256
+
+task write data_i
+@posedge
+print message Task: write
+// @posedge
+#1
+address_i = addr
+data_i = data
+strobe_i = 1
+we_i = 1
+@posedge
+print signal address_i
+wait ack_o = 1
+// @posedge
+#1
+print signal data_i
+strobe_i = 0
+address_i = 0
+data_i = 0
+we_i = 0
+endtask
+
+task read data_o
+@posedge
+print message Task: read
+// @posedge
+#1
+address_i = addr
+data_i = 0
+strobe_i = 1
+we_i = 0
+@posedge
+print signal address_i
+wait ack_o = 1
+print signal data_o
+// @posedge
+#1
+strobe_i = 0
+address_i = 0
+data_i = 0
+we_i = 0
+data = data_o
+endtask
+
+task reset
+@posedge
+rst_i = 1
+@posedge
+rst_i = 0
+endtask

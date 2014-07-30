@@ -1,0 +1,2 @@
+	if (!first_call)
+	{

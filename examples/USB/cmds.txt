@@ -1,0 +1,4 @@
+design_flow_wrapper.sh -f lists/filelist.usb -d lists/directory_list -m conf/usb_definitions.txt -p conf/usb_protocol.txt
+design_flow_wrapper.sh -f lists/filelist.connector -d lists/directory_list -m conf/usb_connector_definitions.txt -p conf/usb_connector_protocol.txt
+umask 177 && arm-eabi-gcc -T target.ld -nostdlib  -I${ECOS_INSTALL}/include/ -L${ECOS_INSTALL}/lib -Isw sw/usb_program.c sw/usb_program_helper.c -o sw/usb_image
+arm-eabi-sid --board=pid7t-normalmap --load cpu=sw/usb_image --custom=conf/sid_conf/usbHostSlave_sid_custom.conf

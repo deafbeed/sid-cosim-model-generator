@@ -1,0 +1,23 @@
+substitute ##MOD_NAME## %%TOP_MODULE%%
+task read read.head.cxx read.tail.cxx
+task write write.head.cxx write.tail.cxx
+task reset reset.head.cxx reset.tail.cxx
+statement assign assign.cxx
+statement assert assert.cxx
+statement delay delay.cxx
+statement edge_begin edge_begin.cxx
+statement edge_end edge_end.cxx
+statement print_message print_message.cxx
+statement print_signal print_signal.cxx
+statement print_parameter print_parameter.cxx
+statement print_time print_time.cxx
+statement wait wait.cxx
+entity signal signal.cxx
+entity parameter parameter.cxx
+entity value value.cxx
+endian	endian.cxx
+unpermitted read unpermitted_read.cxx
+unpermitted write unpermitted_write.cxx
+default read read.default.cxx
+default write write.default.cxx
+default reset reset.default.cxx

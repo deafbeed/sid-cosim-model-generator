@@ -1,0 +1,7 @@
+./rtl/pwm_clock_gating.v
+./rtl/pwm_crm.v
+./rtl/pwm_dft_reset_mux.v
+./rtl/pwm_fifo.v
+./rtl/pwm_outputgen.v
+./rtl/pwm_reg.v
+./rtl/pwm.v

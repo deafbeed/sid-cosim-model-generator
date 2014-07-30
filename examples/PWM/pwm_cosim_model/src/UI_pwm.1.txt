@@ -1,0 +1,4 @@
+out	hdl_ipi_int_pwm
+clock	hdl_clock_pin
+reset	hdl_reset_pin
+typename	hw-hdl-pwm

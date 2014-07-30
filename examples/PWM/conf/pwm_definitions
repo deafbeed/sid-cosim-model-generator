@@ -1,0 +1,13 @@
+bc	ipg_clk_s 		2
+c	ipg_clk			2
+c	ipg_clk_highfreq	1
+c	ipg_clk_32k 		8
+
+i	ips_byte_7_0		1
+i	ips_byte_15_8		1
+i	ips_byte_23_16		1
+i	ips_byte_31_24		1
+
+out	ipi_int_pwm
+
+reset ipg_hard_async_reset_b 	1

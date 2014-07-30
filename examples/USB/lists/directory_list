@@ -1,0 +1,9 @@
+./trunk/RTL/buffers/
+./trunk/RTL/busInterface/
+./trunk/RTL/hostController/
+./trunk/RTL/hostSlaveMux/
+./trunk/RTL/serialInterfaceEngine/
+./trunk/RTL/slaveController/
+./trunk/RTL/wrapper/
+./trunk/RTL/include/
+./trunk/bench/

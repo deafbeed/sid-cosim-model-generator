@@ -1,0 +1,29 @@
+VusbConnector__ALLsup.lo VusbConnector__ALLsup.o:  \
+ /home/ipinte5/work/env/cosim/generator/examples/USB/usbConnector_cosim_model/src/VusbConnector__ALLsup.cpp \
+  /home/ipinte5/work/env/cosim/generator/examples/USB/usbConnector_cosim_model/src/VusbConnector__Trace.cpp \
+  /home/ipinte5/work/env/cosim/verilator/verilator-3.803/include/verilated_vcd_c.h \
+  /home/ipinte5/work/env/cosim/verilator/verilator-3.803/include/verilatedos.h \
+  /home/ipinte5/work/env/cosim/generator/examples/USB/usbConnector_cosim_model/src/VusbConnector__Syms.h \
+  /home/ipinte5/work/env/cosim/verilator/verilator-3.803/include/verilated.h \
+  /home/ipinte5/work/env/cosim/generator/examples/USB/usbConnector_cosim_model/src/VusbConnector.h \
+  /home/ipinte5/work/env/cosim/generator/examples/USB/usbConnector_cosim_model/src/VusbConnector_usbConnector.h \
+  /home/ipinte5/work/env/cosim/generator/examples/USB/usbConnector_cosim_model/src/VusbConnector__Syms.cpp \
+  /home/ipinte5/work/env/cosim/generator/examples/USB/usbConnector_cosim_model/src/VusbConnector__Trace__Slow.cpp
+
+/home/ipinte5/work/env/cosim/generator/examples/USB/usbConnector_cosim_model/src/VusbConnector__Trace.cpp:
+
+/home/ipinte5/work/env/cosim/verilator/verilator-3.803/include/verilated_vcd_c.h:
+
+/home/ipinte5/work/env/cosim/verilator/verilator-3.803/include/verilatedos.h:
+
+/home/ipinte5/work/env/cosim/generator/examples/USB/usbConnector_cosim_model/src/VusbConnector__Syms.h:
+
+/home/ipinte5/work/env/cosim/verilator/verilator-3.803/include/verilated.h:
+
+/home/ipinte5/work/env/cosim/generator/examples/USB/usbConnector_cosim_model/src/VusbConnector.h:
+
+/home/ipinte5/work/env/cosim/generator/examples/USB/usbConnector_cosim_model/src/VusbConnector_usbConnector.h:
+
+/home/ipinte5/work/env/cosim/generator/examples/USB/usbConnector_cosim_model/src/VusbConnector__Syms.cpp:
+
+/home/ipinte5/work/env/cosim/generator/examples/USB/usbConnector_cosim_model/src/VusbConnector__Trace__Slow.cpp:

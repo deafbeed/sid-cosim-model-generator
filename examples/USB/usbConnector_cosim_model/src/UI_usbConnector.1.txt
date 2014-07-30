@@ -1,0 +1,11 @@
+in	hdl_hostDataIn
+in	hdl_hostControl
+in	hdl_slaveDataIn
+in	hdl_slaveControl
+in	hdl_USBDPlusPullup
+in	hdl_USBDMinusPullup
+out	hdl_hostDataOut
+out	hdl_slaveDataOut
+clock	hdl_clock_pin
+reset	hdl_reset_pin
+typename	hw-hdl-usbConnector
